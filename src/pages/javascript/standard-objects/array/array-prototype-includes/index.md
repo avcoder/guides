@@ -2,14 +2,35 @@
 title: Array.prototype.includes
 ---
 ## Array.prototype.includes
+The includes() method will return true, if the value you are searching for matches an element in the given array.
 
-This is a stub. <a href='https://github.com/freecodecamp/guides/tree/master/src/pages/javascript/standard-objects/array/array-prototype-includes/index.md' target='_blank' rel='nofollow'>Help our community expand it</a>.
+For example, to find out if "Mustard" is in an array:
+```javascript
+const food = ["Relish", "Mustard", "Ketchup"]
+food.includes("Mustard");  // true
+food.includes("Seed");     // false
+```
 
-<a href='https://github.com/freecodecamp/guides/blob/master/README.md' target='_blank' rel='nofollow'>This quick style guide will help ensure your pull request gets accepted</a>.
 
-<!-- The article goes here, in GitHub-flavored Markdown. Feel free to add YouTube videos, images, and CodePen/JSBin embeds  -->
+By default, includes() starts searching from the beginning of the array, but the second parameter can be used to tell includes() which position in the array to start searching.
+
+For example, to start searching at the second position of the array (which has an index of 1 since arrays are zero-based):
+```javascript
+const food = ["Relish", "Mustard", "Ketchup"]
+food.includes("Mustard", 1);  // true
+food.includes("Mustard", 2);  // false
+```
+
+If the second argument passed to includes() is a negative number, then the method will count backwards from the last array position and start searching there.
+
+For example, to start searching at the second position of the array using a negative number:
+```javascript
+const food = ["Relish", "Mustard", "Ketchup"]
+food.includes("Mustard", -2);  // true because it starts searching from "Mustard" onward
+food.includes("Mustard", -1);  // false because it starts searching from "Ketchup" onward
+```
 
 #### More Information:
-<!-- Please add any articles you think might be helpful to read before writing the article -->
+[MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
 
 
