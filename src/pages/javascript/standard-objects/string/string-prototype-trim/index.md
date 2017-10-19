@@ -2,14 +2,17 @@
 title: String.prototype.trim
 ---
 ## String.prototype.trim
+The trim() method returns a string with any whitespace removed from its beginning and end.  Whitespace includes tabs, spaces, no-break space, line feed character, carriage return character, etc.  When the trim() method is called by a string, that string itself is not changed.
 
-This is a stub. <a href='https://github.com/freecodecamp/guides/tree/master/src/pages/javascript/standard-objects/string/string-prototype-trim/index.md' target='_blank' rel='nofollow'>Help our community expand it</a>.
+For example, to trim "     popcorn    ":
+```javascript
+const food = "     popcorn    ";
+console.log(food.trim());  // output is "popcorn"
+console.log(food);         // output is "     popcorn    "
+```
 
-<a href='https://github.com/freecodecamp/guides/blob/master/README.md' target='_blank' rel='nofollow'>This quick style guide will help ensure your pull request gets accepted</a>.
-
-<!-- The article goes here, in GitHub-flavored Markdown. Feel free to add YouTube videos, images, and CodePen/JSBin embeds  -->
 
 #### More Information:
-<!-- Please add any articles you think might be helpful to read before writing the article -->
+[MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim)
 
 
